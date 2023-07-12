@@ -1,0 +1,23 @@
+{
+	"name": "try-catch-repro",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"main": "./dist/TryCatchRepro.umd.js",
+	"module": "./dist/TryCatchRepro.es.js",
+	"exports": {
+		".": {
+			"import": "./dist/TryCatchRepro.es.js",
+			"require": "./dist/TryCatchRepro.umd.js"
+		}
+	},
+	"scripts": {
+		"build": "vite build"
+	},
+	"devDependencies": {
+		"vite": "^4.3.9"
+	}
+}
